@@ -4,9 +4,9 @@ Image Gallery for GAE using Django-nonrel
 This projet aims to create web image gallery deployable to Google App Engine using Django-nonrel framework.
 
 
-__NOTE: this project is NON-working and INCOMPLETE__
+__NOTE: this project is NON-working and INCOMPLETE. So far it displays "It Worked!" page.__
 
-However if you want setup your own Django-nonrel application for GAE these instructions would be usefull...
+However if you want setup your own Django-nonrel application for GAE these instructions would be useful...
 
 Setup
 -----
