@@ -6,10 +6,22 @@ This projet aims to create web image gallery deployable to Google App Engine usi
 
 __NOTE: this project is NON-working and INCOMPLETE__
 
+However if you want setup your own Django-nonrel application for GAE these instructions would be usefull...
+
 Setup
 -----
 
-These instructions are based on http://www.allbuttonspressed.com/projects/djangoappengine.
+Setup is partially based on http://www.allbuttonspressed.com/projects/djangoappengine.
+
+At first get most recent GAE SDK from http://code.google.com/appengine/downloads.html#Google_App_Engine_SDK_for_Python
+
+And unpack it:
+
+```
+su - # go to root, or maybe try 'sudo bash'
+cd /opt
+unzip ~/path_to_my_sdk/google_appengine_1.5.5.zip
+```
 
 
 To clone dependent projects you need to install Mercurial (`hg' command). On Fedora Linux try:
@@ -21,32 +33,19 @@ Run this script to clone and link django-nonrel projects:
 	./clone_and_link_django_nonrel.sh
 
 
-* create setup script for environment/path - named `~/bin/set_django_nonrel.sh' with contents:
-
-```bash
-#!/bin/bash
-
-dj=/opt/wkornewald-django-nonrel-tip
-
-export PYTHONPATH=$dj
-export PATH=$PATH:$dj/django/bin
-```
 
 Local development
 -----------------
 
-* cd to project directory and setup paths:
-
-		cd gae-imagegallery-django/imagegallery
-		. ~/bin/set_django_nonrel.sh
-
-
 * running local server
+		export PATH=/opt/google_appengine:$PATH
+		cd gae-imagegallery-django/imagegallery
 		./manage.py runserver
 
+* point your borwser at http://localhost:8000/ It should say "Your Django-nonrel installation is working fine."
 
 Remote deployment
 -----------------
 
-
+TODO: (not yet tested)
 
