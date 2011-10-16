@@ -29,9 +29,10 @@ done
 # setup links
 cd $now/imagegallery
 
-[ -L django ] || ln -s $target/django-nonrel/django .
-[ -L djangoautoload ] || ln -s $target/django-autoload/djangoautoload .
-for p in djangoappengine djangotoolbox
+[ -L django ] || ln -s $target/django-nonrel django
+[ -L djangoautoload ] || ln -s $target/django-autoload/autoload .
+[ -L djangoappengine ] || ln -s $target/djangoappengine .
+for p in djangotoolbox
 do
  [ -L $p ] || ln -s $target/$p/$p .
 done

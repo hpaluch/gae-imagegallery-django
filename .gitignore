@@ -4,4 +4,4 @@ imagegallery/*.pyc
 imagegallery/django
 imagegallery/djangoappengine
 imagegallery/djangotoolbox
-imagegallery/djangoautoload
+imagegallery/autoload
