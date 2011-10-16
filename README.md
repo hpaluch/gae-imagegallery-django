@@ -8,12 +8,13 @@ Setup
 
 These instructions are based on http://www.allbuttonspressed.com/projects/djangoappengine.
 
-* Get Django-nonrel from http://bitbucket.org/wkornewald/django-nonrel/get/tip.zip
 
-* unpack it somewhere (for example /opt):
+Clonning dependent projects: Django-nonrel requires few packages from mercurial repository. To clone them you need to intall mercurial (provides hg command). For example on Fedora Linux:
 
-		cd /opt
-		unzip  /path_to/wkornewald-django-nonrel-tip.zip
+	yum install mercurial
+
+
+
 
 * create setup script for environment/path - named `~/bin/set_django_nonrel.sh' with contents:
 

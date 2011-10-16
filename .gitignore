@@ -1,2 +1,9 @@
 *.swp
 *.pyc
+imagegallery/*.pyc
+imagegallery/django/
+imagegallery/djangoappengine/
+imagegallery/djangotoolbox/
+imagegallery/django-autoload/
+imagegallery/django-testapp/
+
