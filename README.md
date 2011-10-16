@@ -3,17 +3,22 @@ Image Gallery for GAE using Django-nonrel
 
 This projet aims to create web image gallery deployable to Google App Engine using Django-nonrel framework.
 
+
+__NOTE: this project is NON-working and INCOMPLETE__
+
 Setup
 -----
 
 These instructions are based on http://www.allbuttonspressed.com/projects/djangoappengine.
 
 
-Clonning dependent projects: Django-nonrel requires few packages from mercurial repository. To clone them you need to intall mercurial (provides hg command). For example on Fedora Linux:
+To clone dependent projects you need to install Mercurial (`hg' command). On Fedora Linux try:
 
 	yum install mercurial
 
+Run this script to clone and link django-nonrel projects:
 
+	./clone_and_link_django_nonrel.sh
 
 
 * create setup script for environment/path - named `~/bin/set_django_nonrel.sh' with contents:
